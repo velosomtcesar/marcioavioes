@@ -1,5 +1,6 @@
 using app.interactions from '../db/interactions';
 using {sap} from '@sap/cds-common-content';
+using V_INTERATION from '../db/interactions';
 
 service CatalogService {
 
@@ -10,4 +11,14 @@ service CatalogService {
 
     @readonly
     entity Languages           as projection on sap.common.Languages;
+
+/*
+    @readonly
+    entity HeaderView          as projection on interactions.Headers;
+*/
+    @readonly
+    entity V_Interation        as projection on V_INTERATION;
+    
 }
+
+
